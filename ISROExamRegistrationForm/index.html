@@ -1,0 +1,166 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<title>ISRO EXAM REGISTRATION</title>
+	<style>
+		body{border:SOLID; background-image:url("images/background.jpg")}
+		header{background-image:url("images/back1.jpg");background-size:cover;
+			background-repeat:no-repeat;}
+		.form_align
+		{
+			border:SOLID;
+			margin-left: 400px;
+			margin-right: 400px;
+			background-color:white;
+			
+		}
+	</style>
+	</head>
+	
+	<body >
+	  <header  >
+	  <img src="images/logo.svg" alt=ISRO_LOGO align="right" styel="margin-top: 40px;">
+	  <img src="images/govofindia_logo.jpg" alt=ISRO_LOGO align="left">
+		<br><h1 align="center" style="font-size:350%; top:15%; color:ORANGE;"> Indian Space Research Organisation (ISRO) </h1>
+		<p align="center" style="font-size:200%;color:WHITE">Exam registration 2020-2021</p><br><br>
+		<br><hr style="border-color:BLACK">
+	  </header>
+	  
+	
+	<section class="form_align">
+	<pre align="left" style="font-size:20px; font-family: Times New Roman"><b>  Please fill the form below to register for ISRO exam 2021.</b></pre>
+		<pre align="left" style="font-size:20px ; font-family: Times New Roman"><b>  Make sure you fill in the form completely, or your application might get rejected.</b></pre>
+	<br>
+	<section border-style="dashed" align="center",body style="font-size:200%","background-color:#5C5C58"><b> STUDENT INFORMATION<b></section>
+	
+	<form>  
+	<fieldset>
+	<label> Firstname :   </label>         
+	<input type="text" name="firstname" size="15"/> <br> <br>  
+	<label> Middlename :  </label>     
+	<input type="text" name="middlename" size="15"/> <br> <br>  
+	<label> Lastname :    </label>         
+	<input type="text" name="lastname" size="15"/> <br> <br>  
+	<label> Parent's Name :   </label>         
+	<input type="text" name="parent's name" size="15"/> <br> <br> 
+	<label>   
+	Gender :  
+	</label> 
+	<input type="radio" name="male"/> Male   
+	<input type="radio" name="female"/> Female
+	<input type="radio" name="other"/> Other  
+	<br>  
+	<br>  
+	<label>   
+	Phone :  
+	</label>  
+	<input type="text" name="country code"  value="+91" size="2"/>   
+	<input type="text" name="phone" size="10"/> <br> <br>  
+	Address  
+	<br>  
+	<textarea cols="80" rows="5" value="address">  
+	</textarea>  
+	<br> <br> 
+	<label> State: </label>  
+	<input type="text" id="state" name="state" value="Maharashtra" readonly><br><br>
+	  <br><br>
+	Email:  
+	<input type="email" id="email" name="email"/> <br>    
+	<br> <br>  
+	<label for="id-proof">Choose a id:</label>
+
+	<select name="id-proof" id="id-proof">
+	  <option value="Aadhar-Card">Aadhar-Card</option>
+	  <option value="liscence">liscence</option>
+	  <option value="Pan-Card">Pan-Card</option>
+	  <option value="College-Id">College-Id</option>
+	</select><br><br>
+	<label for="myfile">Upload id-proof:</label>
+	<input type="file" id="myfile" name="myfile"><br><br>
+	Password:  
+	<input type="Password" id="pass" name="pass"> <br>   
+	<br> <br>  
+	Re-type password:  
+	<input type="Password" id="repass" name="repass"> <br> <br>   
+	</fieldset>
+	</form>	</hr>  
+	<section body align="center" style="font-size:200%" "background-color:#5C5C58">EDUCATIONAL INFORMATION</section>
+
+	<form> 
+	<fieldset> 
+	<label for="Qualification" required multiple>select your qualification:</label>
+
+	<select name="qualification" id="qualification" >
+	  <option value="BE/BE.TECH">BE/BE.TECH</option>
+	  <option value="BSC">BSC</option>
+	  <option value="MBBS">MBBS</option>
+	  <option value="B.ARCH">B.ARCH</option>
+	</select>  
+	<br> <br> 
+	<label for="Branch" selected>select your branch:</label>
+	<br><br>
+	<select name="Branch" id="Branch" size="5">
+	  <option value="ComputerScience">CSE</option>
+	  <option value="ARTS">ARTS</option>
+	  <option value="Finance">Finance</option>
+	  <option value="Commercial arts">Commercial arts</option>
+	  <option value="CIVIL">Civil</option>
+	</select>  
+	<br> <br> 
+	<form action="/action_page.php" method="get">   
+	<label required> College Name: </label>         
+	<input list="CollegeName" name="CollegeName" id="CollegeName"> <br> <br>  
+	<datalist id="CollegeName">
+	  <option value="Walchand college of Engineering">
+	  <option value="College of Engineering Pune">
+	  <option value="Bits Pilani goa">
+	  <option value="K.J. Somiayya,ghatkoper">
+	  <option value="PVPIT,Budhaon">
+	</datalist>
+	</form>
+	<label required> University: </label>         
+	<input type="University" name="University" id="University" size="15"/> <br> <br> 
+	<datalist id="University">
+	  <option value="Shivaji university">
+	  <option value="Pune university">
+	  <option value="Chennai university">
+	  <option value="Goa University">
+	  <option value="Mumbai university">
+	</datalist>
+	<label>exam seat number :  </label>     
+	<input type="text" name="exam seat number" size="10"/> <br> <br> 
+	</fieldset>    
+	</form> 	</hr> 
+	<section body align="center" style="font-size:200%","background-color:#5C5C58">EXAM PREFERENCES</section>
+	<fieldset>
+	<label for="ISRO Exam Paper Branch" required multiple>ISRO Exam Paper Branch:</label>
+
+	<select name="ISRO Exam Paper Branch" id="ISRO Exam Paper Branch" align: left>
+	  <option value="Chennai">Chennai</option>
+	  <option value="Maharashtra">Maharashtra</option>
+	  <option value="North">North</option>
+	  <option value="Chattisgarh">Chattisgarh</option>
+	</select>  <br><br>
+	<label for="city">Choose your city:</label>
+	<select  name="city" id="city">
+	  <optgroup label="sangli">
+		<option value="tasgaon">tasgaon</option>
+		<option value="miraj">miraj</option>
+		<option value="padmale">padmale</option>
+		<option value="madhavnagar">madhavnagar</option>
+	  </optgroup>
+	  <optgroup label="Mumbai">
+		<option value="dadar">dadar</option>
+		<option value="andheri">andheri</option>
+		<option value="mulund">mulund</option>
+		<option value="thane">thane</option>
+	  </optgroup>
+	</select>
+	<br><br>
+	<form method="POST" action="https://www.isro.gov.in/careers">
+		   <input type="submit"/>
+	</fieldset>
+		 </form>
+	<br> <br>
+	<footer align="center">&nbsp |help|&nbsp |contact us| |website policies| |Feedback| |privacy policy|</footer><br></section>
+</html>
