@@ -1,0 +1,227 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>Customer Feedback Form</title>  
+<style>    
+ 	body{background-image:url("images/background.jpeg"); background-color:BROWN;background-repeat:no-repeat; background-size:cover; }
+	h1{font-family: Verdana, Geneva, Tahoma, sans-serif; color:brown; text-align:center;font-weight: bold; font-size:40px }  
+	h2{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align:center}
+	label{font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; }
+ { box-sizing: border-box;    
+}   
+	.form_align
+		{
+			border:SOLID;
+			margin-left: 400px;
+			margin-right: 400px;
+			background-color:white;
+			
+		} 
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+     color:WHITE;
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: WHITE;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 3px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 73%;    
+  margin-top: 3px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+} 
+  
+      
+</style>    
+</head>    
+<body> 
+	<section class="form_align"> 
+	<header>
+		<h1>PARADISE TRAVEL</h1>
+		<h2>Customer Feedback Form</h2>	
+	</header>  
+    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name :</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Example : Dipali">    
+      </div>    
+    </div>  <br>   
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name :</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Example : Kumbhar">    
+      </div>    
+    </div>   <br>  
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id :</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Example : kumbhardipali96@gmail.com">    
+        </div>    
+      </div> <br>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country :</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+            <option value="none">Select Country</option>    
+          <option value="australia">Australia</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div> <br>
+   
+	<div class="row">    
+      <div class="col-25">    
+        <label for="satisfaction">Level of satisfaction : </label>    
+      </div>    
+      <div>     
+           <select id="data_10" name="data_10" style="max-width : 500px;" class="form-control"><option>Very good</option>
+	<option>Good</option>
+	<option>Fair</option>
+	<option>Poor</option>
+	<option>Very poor</option>
+	</select>   
+      </div>    
+    </div> <br>
+     
+	<div class="row">    
+      <div class="col-25">    
+        <label for="satisfaction">Tour content :</label>    
+      </div>    
+      <div>    
+           <select id="data_10" name="data_10" style="max-width : 500px;" class="form-control"><option>Very good</option>
+	<option>Good</option>
+	<option>Fair</option>
+	<option>Poor</option>
+	<option>Very poor</option>
+	</select>   
+      </div>    
+    </div> 
+
+	<div class="row">    
+      <div class="col-25">    
+        <label for="service">Quality of presenters :</label>    
+      </div>    
+      <div class="col-65">     
+            <p>
+	<select id="data_10" name="data_10" style="max-width : 500px;" class="form-control"><option>Very good</option>
+	<option>Good</option>
+	<option>Fair</option>
+	<option>Poor</option>
+	<option>Very poor</option>
+	</select> 
+	</p>  
+      </div>    
+    </div>
+    <div>
+	
+	<div class="row">    
+      <div class="col-25">    
+        <label for="service1">Overall rating of the tour :</label>    
+      </div>    
+      <div class="col-65">   <br>   
+        
+	<input type="radio" name="service" checked>1</input>
+	<input type="radio" name="service">2</input>
+	<input type="radio" name="service">3</input>
+	<input type="radio" name="service">4</input>
+	<input type="radio" name="service">5</input>
+	
+      </div>    
+    </div>
+    <div><br>
+    
+	</div>
+    <div class="row">    
+      <div class="col-25">    
+        <label for="comments">Suggestions :</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Any idea for the next tour.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+  
+    <div class="row">    
+      <div class="col-25">    
+        <label for="comments">Comments :</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div> <footer>
+    <hr>
+    	<p style="text-align:center;color:BROWN;font-size:20px"><b>We appreciate your trust, and we will do our best to continue to give you the kind of service you deserve. </b></p>
+    <hr>
+    </footer>
+</body>       
+    </section>
+    
+    
+</html>    
