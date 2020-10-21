@@ -1,0 +1,156 @@
+<!DOCTYPE>
+<HTML>
+<head>
+	<title>Audio Streaming </title>
+	<style>
+	h3{font-family: Verdana, Geneva, Tahoma, sans-serif;color:BLACK; font-size:25px;font-weight:BOLD} 
+	h1{font-family: Verdana, Geneva, Tahoma, sans-serif;color:#00FF66; text-align:center; font-size:45px;}
+	h2{font-family: Verdana, Geneva, Tahoma, sans-serif; color:CYAN; text-align:left; margin-left:200px;font-size:30px; } 
+	p{font-family: Verdana, Geneva, Tahoma, sans-serif; color:#00FF66; text-align:center; font-size:35px; } 
+	.credit_title{ color:WHITE; text-align:left; margin-left:300px;font-size:20px; } 
+	pre{font-family:Times New Roman;color:BLACK}
+	body{background-color:BLACK}
+	.column
+            {
+                float: left;
+                width: 25%;
+              
+               border: 10px outset #ddd;
+               margin-left: 250px;
+               background-color: aliceblue;
+            }
+            .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+          #audiocontainer
+          {
+          	display:block;
+                margin-left:80px;
+                margin-right:auto;
+                margin-top:10%;
+                margin-bottom:3%;
+                
+                border-color: rgb(82, 76, 76);
+          }
+        pre
+        {
+        	font-family:Times New Roman;
+  			font-size:23px;
+        	color : WHITE;
+        	margin:0px 30px;
+    		float: center;
+        }
+	</style>
+	
+</head>
+	
+<body>
+	<header>
+	<h1></h1>
+	<h1 style="font-size:55px;
+   
+    background-color: black;
+   
+    
+    float: center;
+    top:5%">4 Songs You Must Listen Before You Die</h1>
+	</header><br>
+	<section>
+                <nav ALIGN="center" style="background-color: aliceblue;padding:10px;">
+                    <a href="7B_PS2.html" target="_blank">Video Streaming website</a> | &nbsp;
+                    <a href="7B_PS3.html" target="_blank">YouTube website</a> | &nbsp;
+                    <a href="7B_PS4.html" target="_blank">External resources website</a>
+                </nav>
+     </section>
+
+	<h2>Songs :</h2>
+	
+	
+	
+	<!--audio player with its controls, autoplay and loop enabled-->
+	<div class="row">
+        <div class="column" >
+			<div id="audiocontainer">
+				<h3>Imagine Dragons - Believer</h3>
+				<img src="images/believer.jpeg" HSPACE="32px" ><br>
+				<audio id="audioplayer" src="audio/Believer.mp3" controls autoplay loop>
+				<div style="border: 1px solid black ; padding: 8px ;">
+				Sorry, your browser does not support the &lt;audio&gt; tag used in this demo.
+				</div>
+				</audio>
+				
+			</div>
+			<pre style=" color:BLACK"><a href="https://youtu.be/W0DM5lcj6mw" target="_blank">Click here </a> to watch the video.</pre>
+				<pre style=" color:BLACK"><a href="https://genius.com/Imagine-dragons-believer-lyrics" target="_blank">Click here </a> to read the lyrics.</pre>
+				<pre style=" color:BLACK"><a href="https://en.wikipedia.org/wiki/Believer" target="_blank">Click here </a> to know more about the song.</pre><br>
+		</div>
+
+	<!--audio player with disabled controls, autoplay and muted-->
+		<div class="column" >
+			<div id="audiocontainer">
+			<h3>The Script - Hall of Fame</h3>
+			<img src="images/halloffame.jpg" HSPACE="32px"><br>
+			<audio autoplay muted id="audioplayer" src="audio/hallofFame.mp3">
+			<div style="border: 1px solid black ; padding: 8px ;">
+			Sorry, your browser does not support the &lt;audio&gt; tag used in this demo.
+			</div>
+			</audio>
+			</div><br><br><br>
+			<pre style=" color:BLACK"><a href="https://www.youtube.com/watch?v=mk48xRzuNvA" target="_blank">Click here </a> to watch the video.</pre>
+				<pre style=" color:BLACK"><a href="https://genius.com/The-script-hall-of-fame-lyrics" target="_blank">Click here </a> to read the lyrics.</pre>
+				<pre style=" color:BLACK"><a href="https://en.wikipedia.org/wiki/Hall_of_Fame_(song)" target="_blank">Click here </a> to know more about the song.</pre><br>
+		</div>
+	</div><br><hr><br>
+	
+	<!--audio player with its controls and element with source tag-->
+	<div class="row">
+        <div class="column" >
+			<div id="audiocontainer">
+			<h3>The Beatles - A Day In The Life</h3>
+			<img src="images/beatles.jpeg" HSPACE="32px"><br>
+			<audio id="audioplayer" controls >
+			<source src="audio/beatles.mp3" type="audio/mpeg">
+			<source src="audio/beatles.ogg" type="audio/ogg">
+			<div style="border: 1px solid black ; padding: 8px ;">
+			Sorry, your browser does not support the &lt;audio&gt; tag used in this demo.
+			</div>
+			</audio>
+			</div>
+			<pre style=" color:BLACK"><a href="https://youtu.be/usNsCeOV4GM" target="_blank">Click here </a> to watch the video.</pre>
+				<pre style=" color:BLACK"><a href="https://genius.com/The-beatles-a-day-in-the-life-lyrics" target="_blank">Click here </a> to read the lyrics.</pre>
+				<pre style=" color:BLACK"><a href="https://en.wikipedia.org/wiki/A_Day_in_the_Life" target="_blank">Click here </a> to know more about the song.</pre><br>
+		</div>
+
+	<!--Audio player with its control and with subtitles using track-->
+	<div class="column" >
+			<div id="audiocontainer">
+			<h3>Titanic - My Heart Will Go On</h3>
+			<img src="images/heart.jpg" HSPACE="32px"><br>
+			<audio controls  id="audioplayer" src="audio/heart.mp3">
+			<source src="audio/heart.webm" type="video/webm">
+			<div style="border: 1px solid black ; padding: 8px ;">
+			Sorry, your browser does not support the &lt;audio&gt; tag used in this demo.
+			</div>
+			<track label="English" kind="subtitles" srclang="en" src="content/Heart.vtt" default>
+			</audio>
+			</div>
+			<pre style=" color:BLACK"><a href="https://youtu.be/3gK_2XdjOdY" target="_blank">Click here </a> to watch the video.</pre>
+				<pre style=" color:BLACK"><a href="https://genius.com/Celine-dion-my-heart-will-go-on-lyrics" target="_blank">Click here </a> to read the lyrics.</pre>
+				<pre style=" color:BLACK"><a href="https://en.wikipedia.org/wiki/My_Heart_Will_Go_On" target="_blank">Click here </a> to know more about the song.</pre><br>
+		</div>
+	</div><br><hr>
+
+	<footer>
+		<h2>Credits :</h2>
+		<div class="credit_title"><b>Song :</b> My Heart will go on</div><br>
+		<div class="credit_title"><b>Singer :</b> Celine Dion</div><br>
+		<div class="credit_title"><b>Songwriter(s) :</b> James Horner (music), Will Jennings (lyrics)</div><br>
+		<div class="credit_title"><b>Movie :</b> Titanic (1997 Film)</div><br><hr>
+		<p ><b><i>Boundless!!<i><b></p><hr>
+	</footer>
+	
+</body>
+</HTML>
