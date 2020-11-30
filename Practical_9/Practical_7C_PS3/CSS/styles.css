@@ -1,0 +1,47 @@
+h3{font-family: Verdana, Geneva, Tahoma, sans-serif;color:WHITE; font-size:25px;font-weight:BOLD} 
+	h1{font-family: Verdana, Geneva, Tahoma, sans-serif;color:YELLOW; text-align:center; font-size:45px;}
+	h2{font-family: Verdana, Geneva, Tahoma, sans-serif; color:YELLOW; text-align:center; font-size:30px; } 
+	ul{font-family: Verdana, Geneva, Tahoma, sans-serif; color:WHITE; font-size:25px; } 
+	dl{font-family: Verdana, Geneva, Tahoma, sans-serif; color:WHITE; font-size:25px; } 
+	ol{font-family: Verdana, Geneva, Tahoma, sans-serif; color:WHITE; font-size:25px; } 
+	dt{font-family: Verdana, Geneva, Tahoma, sans-serif; color:#FFFF66; font-size:25px; } 
+	p{font-family: Verdana, Geneva, Tahoma, sans-serif; color:YELLOW; text-align:center; font-size:35px; } 
+	.author{font-family: Verdana, Geneva, Tahoma, sans-serif; color:CYAN; text-align:center;  } 
+	.credit_title{ color:WHITE; text-align:left; margin-left:300px;font-size:20px; } 
+	
+	
+	.column
+            {
+                float: left;
+                width: 30%;
+               margin-left: 235px;
+              
+            }
+  table, th, td,tr{  border-collapse: collapse; border: 2px solid black;}
+  
+     .table-row
+            {
+               text-align:center;
+              background-color: #34495e;
+                height:35px;
+				cursor: all-scroll;
+				
+            }
+            .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+       td { 
+            border: 1px solid black; 
+            text-align: center; 
+            padding: 10px; 
+        } 
+  
+        tr:nth-child(odd) { 
+            background-color:#CCCCFF; 
+        } 
+        tr:nth-child(even) { 
+            background-color:#FFFFCC; 
+        }
