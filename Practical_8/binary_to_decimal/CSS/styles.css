@@ -1,0 +1,20 @@
+
+            h1{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size:60px}
+            code{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: left; font-size:20px}
+            .column 
+            {
+                float: left;
+                width: 49%;
+                border-style: solid;
+            }
+            .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            body
+            {
+                background-color:rgb(245, 248, 242) ;
+            }
+     

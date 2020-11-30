@@ -1,0 +1,47 @@
+			 h1
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                text-align: center; 
+                font-size:60px; 
+                color:rgb(8, 2, 68)
+            }
+            body 
+			 {
+				  background-image: url("../images/background1.gif") ;
+				  background-color: #d9e6e6; 
+				  background-repeat: no-repeat; 
+				 background-size:100% 100vh;
+			  }
+			blockquote
+			{
+				font-size:30px;
+				color:rgb(32, 0, 11);
+			}
+			 .column 
+            {
+                float: left;
+                width: 49%;
+                border-style: solid;
+            }
+            .column1 
+            {
+                float: right;
+                width: 49%;
+                border-style: solid;
+            }
+            .column2 
+            {
+                float: left;
+                width: 49%;
+                border-style: solid;
+                margin-top: 4em;
+                margin-bottom: em;
+                margin-left: 400px;
+                margin-right: 200px;
+            }  
+            p
+            {
+            	 font-size:30px; 
+            	 margin-top: 20em;
+            	 color: rgb(37, 2, 2);
+            }

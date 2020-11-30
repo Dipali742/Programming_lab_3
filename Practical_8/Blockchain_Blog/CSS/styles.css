@@ -1,0 +1,9 @@
+h1{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size:60px}
+		 section{font-family: Verdana, Geneva, Tahoma, sans-serif; }
+		 body 
+		 {
+			  background-image: url("../images/background.gif") ;
+			  background-color: #d9e6e6; 
+			  background-repeat: no-repeat; 
+			 background-size:100% 35vh;
+		  }

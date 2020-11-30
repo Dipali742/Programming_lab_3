@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Binary to Decimal conversion</title>
+       	<style>
+       	body {
+		  padding-top: 50px;
+		  padding-right: 30px;
+		  padding-bottom: 50px;
+		  padding-left: 80px;
+		  border-left:6px solid purple;
+		  border-right:6px solid purple;
+		  border-top:6px solid purple;
+		  border-bottom:6px solid purple;
+		}
+       	</style>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Binary to Decimal Conversion</h1>
+            <h2 style="color:rgb(5, 5, 97)">Problem Statement :</h2>
+            <h3>Write a code in any programming language that converts
+                Converts binary number to decimal number.</h3>
+        </header>
+
+        <img src="images/btd.gif" ALIGN="right" HSPACE="30" alt="Blockchain" border="1">
+        <!--Algorithm-->
+        <h2 style="color:rgb(5, 5, 97)">Algorithm:</h2>
+        <h3> 1. The idea is to extract the digits of a given binary number starting from right most digit and keep a variable dec_value.<br>
+             2. At the time of extracting digits from the binary number, multiply the digit with the proper base (Power of 2) and add it to the variable dec_value. <br>
+             3. At the end, the variable dec_value will store the required decimal number.
+        </h3>
+
+        <!--sample input and output-->
+        <h2 style="color:rgb(5, 5, 97)">Sample input & Output</h2>
+        <pre style="font-size:20px"><strong> Sample input1:                            Sample input2:</strong></pre>
+        <pre style="font-size:15px">  111                                                     101</pre>
+        <pre style="font-size:20px"><strong> Output1:                                  Output2:</strong></pre>
+        <pre style="font-size:15px">  7                                                       10</pre>
+
+        <!--Code-->
+        <h2 style="color: rgb(5, 5, 97)">Code:</h2>
+        <div class="row">
+        <div class="column" style="background-color:rgb(209, 209, 206);">
+        <pre style="font-size:25px"><strong>  C++ Program :</strong> </pre>
+        <code>   
+        <pre>
+        <var> 
+        #include &ltbits/stdc++.h&gt 
+        using namespace std; 
+
+        // Function to convert binary to decimal
+        int binaryToDecimal(int n)
+        {
+            int num = n;
+            int dec_value = 0;
+        
+            // Initializing base value to 1, i.e 2^0
+            int base = 1;
+        
+            int temp = num;
+            while (temp) 
+            {
+                int last_digit = temp % 10;
+                temp = temp / 10;
+        
+                dec_value += last_digit * base;
+        
+                base = base * 2;
+            }
+        
+            return dec_value;
+        }
+        
+        // Driver program to test above function
+        int main()
+        {
+            int num = 10101001;
+        
+            cout << binaryToDecimal(num) << endl;
+        } </var></pre> </code>
+        </div>
+        <div class="column" style="background-color:rgb(209, 209, 206);">
+        <pre style="font-size:25px"><strong> JAVA Program:</strong></pre>
+        <code>
+        <pre> 
+        import java.io.*; 
+        //Class Declaration  
+        class btd 
+        {
+            static int binaryToDecimal(int n)
+            {
+                int num = n;
+                int dec_value = 0;
+         
+                // Initializing base
+                // value to 1, i.e 2^0
+                int base = 1;
+         
+                int temp = num;
+                while (temp > 0) {
+                    int last_digit = temp % 10;
+                    temp = temp / 10;
+         
+                    dec_value += last_digit * base;
+         
+                    base = base * 2;
+                }
+         
+                return dec_value;
+            }
+         
+            // Driver Code
+            public static void main(String[] args)
+            {
+                int num = 10101001;
+                System.out.println(binaryToDecimal(num));
+            }
+        }</pre></code>
+        </div>
+        </div>
+
+        <!--complexity-->
+    <h2 style="color: rgb(5, 5, 97)">Time Complexity:</h2>
+    <pre style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>    The binary to decimal conversion algorithm is of complexity O(k), 
+    i.e. the complexity of the loop. 
+    where, k is a count of the number of digits in the binary representation of x,
+    that is log2x, thus this can also be treated as a algorithm of complexity O(log x)</pre></strong>
+     
+    <h2 style="color: rgb(5, 5, 97)">Space Complexity:</h2>
+    <pre style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;"><strong>Space Complexity: O(1) </pre></strong>
+    <footer>
+        <h2 style="color: rgb(5, 5, 97)">Reference Link:</h2>
+        <a href="https://www.geeksforgeeks.org/program-binary-decimal-conversion/" target="_blank" > https://www.geeksforgeeks.org/program-binary-decimal-conversion/</a>
+        <br><br>
+    </footer>
+
+    <hr style="height:2px;border-width:1;color:black;background-color:black">
+    <h2><center>while( !( succeed = try() ) )</center></h2>
+	<hr style="height:2px;border-width:1;color:black;background-color:black">
+    </body>
+</html>
