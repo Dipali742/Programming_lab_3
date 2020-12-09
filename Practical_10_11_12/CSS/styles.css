@@ -1,0 +1,74 @@
+body{ background-color:BROWN;background-repeat:no-repeat; background-size:cover; }
+	h1{font-family: Verdana, Geneva, Tahoma, sans-serif; color:brown; text-align:center;font-weight: bold; font-size:40px }
+	h3{font-family: Verdana, Geneva, Tahoma, sans-serif; color:brown; font-weight: bold; font-size:20px }  
+	h2{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align:center}
+	label{font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; }
+ { box-sizing: border-box;    
+}   
+	.form_align
+		{
+			border:SOLID;
+			margin-left: 10%;
+			margin-right: 10%;
+			background-color:white;
+			
+		} 
+    
+
+.container {    
+  border-radius: 5px;    
+  background-color: WHITE;    
+  padding: 20px;    
+}    
+   table, th, td 
+{
+    border: 1px solid black;
+    padding:10px;
+    border-collapse: collapse;
+} 
+
+  .column
+            {
+                float: left;
+                width: 49%;
+               border:1px solid black;
+              
+            }
+      .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+       .edit
+       {
+       		margin-left: 20px;
+       }
+       
+       .text-format{font-family: Verdana, Geneva, Tahoma, sans-serif; color:black;font-weight: bold; font-size:20px}
+        .text-format1{font-family: Verdana, Geneva, Tahoma, sans-serif; color:brown;font-weight: bold; font-size:25px}
+        
+        nav{
+   
+   top: 0;
+   
+   background-color: GRAY;
+   overflow: auto;
+   height: auto;
+}
+.links {
+   width: 47%;
+   padding: 17px;
+   display: inline-block;
+   text-align: center;
+   color: GRAY;
+   text-decoration: none;
+   font-size: 17px;
+}
+.links:hover {
+   background-color: GRAY;
+}
+.selected{
+   background-color: GRAY;
+}
+#link { color:#00FF66; font-weight:BOLD;font-size:20px;}
