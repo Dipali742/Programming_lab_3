@@ -1,0 +1,253 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title>Faculty Registration</title> 
+	<script>
+  function clickAlert() {
+    alert("Registration Successful !!");
+}
+</script> 
+<style> 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}   
+ 	body{background-image:url("images/background.jpeg"); background-color:BROWN;background-repeat:no-repeat; background-size:cover; }
+	h1{font-family: Verdana, Geneva, Tahoma, sans-serif; color:brown; text-align:center;font-weight: bold; font-size:40px }  
+	h2{font-family: Verdana, Geneva, Tahoma, sans-serif; text-align:center}
+	label{font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; }
+	.column2
+            {
+                float: left;
+                width: 20%;
+              
+               border: 10px ;
+               margin-left: 40%;
+               
+               background-color: #d9e6e6;
+            }
+            
+            .row:after 
+            {
+                content: "";
+                display: table;
+                clear: both;
+            }
+ { box-sizing: border-box;    
+}   
+	.form_align
+		{
+			border:SOLID;
+			margin-left: 400px;
+			margin-right: 400px;
+			background-color:white;
+			
+		} 
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+     color:WHITE;
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: WHITE;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 3px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 73%;    
+  margin-top: 3px;    
+}    
+    
+
+   .a_effect:link, .a_effect:visited {
+           cursor:move;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a_effect:hover, .a_effect:active {
+  background-color: red;
+}
+      
+</style>    
+</head>    
+<body> 
+	<section class="form_align"> 
+	<header>
+		<h1>Faculty Registration Form</h1>
+	
+	</header>  
+     <div class="row"> <div class="column2"><a href = "index2.html"  target="_blank" class="a_effect">Click here for faculty Login</a></div></div>
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">Full Name :</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Example : Dipali Maruti Kumbhar" required>    
+      </div>    
+    </div>  <br>   
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Mobile No :</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Example : 545665651" required>    
+      </div>    
+    </div>   <br>  
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id :</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Example : kumbhardipali96@gmail.com" required>    
+        </div>    
+      </div> <br>  
+      <div class="row">    
+        <div class="col-25">    
+          <label for="email">Address :</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="add" name="add" placeholder="Example : Padmale, Sangli" required>    
+        </div>    
+      </div> <br>
+      <div class="row">    
+        <div class="col-25">    
+          <label for="email">User ID :</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="USER" name="USER" placeholder="Example : 1456" required>    
+        </div>    
+      </div> <br>  
+       <div class="row">    
+        <div class="col-25">    
+          <label for="email">Password :</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="password" name="password" placeholder="Example : asdfs24332" required>    
+        </div>    
+      </div> <br>
+	  
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country :</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country" required>    
+            <option value="none">Select Country</option>    
+          <option value="australia">Australia</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div> <br>
+   
+	<div class="row">    
+      <div class="col-25">    
+        <label for="satisfaction">Department : </label>    
+      </div>    
+      <div>     
+           <select id="data_10" name="data_10" style="max-width : 500px;" class="form-control"><option>Civil Engineering</option>
+	<option>Computer Science and Engineering</option>
+	<option>Electronics Engineering</option>
+	<option>Electrical Engineering</option>
+	<option>Mechanical Engineering</option>
+	<option>Information Technology</option>
+	</select>   
+      </div>    
+    </div> <br>
+     
+	<div class="row">    
+      <div class="col-25">    
+        <label for="satisfaction">Type :</label>    
+      </div>    
+      <div>    
+           <select id="data_10" name="data_10" style="max-width : 500px;" class="form-control" >
+	<option>FullTime</option>
+	<option>Contractual</option>
+	
+	</select>   
+      </div>    
+    </div> 
+
+ 
+
+   
+    <div class="row">    
+      <div class="col-25">    
+        <label for="comments">Notes :</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Your suggestions / Extra Details.." style="height:200px" required></textarea>    
+      </div>    
+    </div>    
+  
+       
+    <div class="row">    
+      <input type="submit" value="Submit" checked="checked" onclick="clickAlert()" >    
+    </div>    
+  </form>    
+</div> <footer>
+ <div class="row"> <div class="column2"><a href = "index.html"  target="_blank" class="a_effect">Click here for the homepage</a></div></div>
+    <hr>
+    	<p style="text-align:center;color:BROWN;font-size:20px"><b>Fill all the required Details </b></p>
+    <hr>
+    
+    </footer>
+</body>       
+    </section>
+    
+    
+</html>    
